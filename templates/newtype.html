@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+	<h1>New Type</h1>
+	
+	<form action="{{url_for('newType') }}" method = 'POST'>
+
+	<p>Name:</p>
+
+	<input type='text' size='30' name='name'>
+	<p>Description:</p>
+	<input type='text' size='30' name='description'>
+	</br>
+	<input type='submit' value='Create' class='submit'>
+
+	</form>
+		
+
+
+{% endblock %}
